@@ -1,4 +1,4 @@
-<div mz-screen on-swipe-left="swipeLeft()" on-swipe-right="swipeRight()">
+<div mz-screen>
 	<ion-footer-bar>
 	 	<div class="row row-center text-center">
 	    	<div class="col col-col-25" ng-repeat="item in _screenParams.menu" ng-click="changeSlide($index, item.screen)">
@@ -6,5 +6,5 @@
 	    	</div>
 	    </div>
 	</ion-footer-bar>
-	<ion-nav-view ></ion-nav-view>
-</div>
+	<ion-nav-view on-swipe-left="swipeLeft()" on-swipe-right="swipeRight()"></ion-nav-view>
+<div>
